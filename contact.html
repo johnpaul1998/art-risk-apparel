@@ -25,7 +25,15 @@
     <title>Artisk Apparel</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light py-4 fixed-top">
+    <!-- fixed icon right side bottom -->
+    <a href="https://www.facebook.com/jem.santos.524381"
+      ><img
+        class="fixed-icon m-1"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg"
+        alt="Facebook_Messenger_logo_2020"
+      />
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light py-4 fixed-top d-block">
       <div class="container">
         <a
           href="index.html"
@@ -73,6 +81,216 @@
         </div>
       </div>
     </nav>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="modalLoginForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Member Log in</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5">
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <input
+                type="email"
+                id="defaultForm-email"
+                class="form-control validate"
+              />
+              <label
+                data-error="wrong"
+                data-success="right"
+                for="defaultForm-email"
+                >Your email</label
+              >
+            </div>
+
+            <div class="md-form mb-4">
+              <i class="fas fa-lock prefix grey-text"></i>
+              <input
+                type="password"
+                id="defaultForm-pass"
+                class="form-control validate"
+              />
+              <label
+                data-error="wrong"
+                data-success="right"
+                for="defaultForm-pass"
+                >Your password</label
+              >
+            </div>
+          </div>
+          <a href="register-form.html" class="btn btn-success m-3">Register</a>
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-default">Login</button>
+            <button
+              class="btn btn-default btn-danger close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact us -->
+    <section class="margin-top">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center py-5 fw-bolder">Contact Us</h2>
+          <p class="lead text-center">
+            Please use this form to contact us and we will get back to you as
+            soon as possible!
+          </p>
+          <div class="col-md">
+            <form class="row g-3">
+              <div class="col-md-12">
+                <label for="" class="form-label">Email</label>
+                <input type="email" class="form-control" id="" />
+              </div>
+              <div class="col-md-12">
+                <label for="" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="" />
+              </div>
+              <div class="col-md-12">
+                <label for="" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="" />
+              </div>
+              <div class="col-md-12">
+                <label for="" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="" />
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary rounded-0">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md">
+            <h2 class="py-3">Contact info</h2>
+            <ul class="list-unstyled">
+              <li>
+                <span class="fw-bold">Main Location:</span>San Fernando,
+                Pampanga
+              </li>
+              <li><span class="fw-bold">Inquiry Phone:</span>(333) 333-3333</li>
+              <li>
+                <span class="fw-bold">Inquiry Email:</span
+                >Artriskapparel@kodego.com
+              </li>
+              <li>
+                <span class="fw-bold">Open Monday to Sunday:</span>9am - 5pm
+              </li>
+            </ul>
+            <div class="d-none d-md-block">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42349.01039726298!2d120.66220233217918!3d15.056850842201431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1660886315794!5m2!1sen!2sph"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-50 h-50"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- info -->
+    <section class="py-3">
+      <div class="container">
+        <div class="row g-1">
+          <div class="col-lg-3 col-sm-6">
+            <div class="card border-primary rounded-0 mb-3 h-100">
+              <div class="card-header h3 fw-bold text-center">Chat</div>
+              <div class="card-body text-dark text-center mt-1">
+                <i
+                  class="bi bi-chat-fill text-white bg-warning rounded-pill p-3"
+                ></i>
+                <p class="card-text fw-bold m-3">Chat me</p>
+                <p class="card-text text-muted">
+                  Monday - Sunday <br />9am - 5pm
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card border-primary rounded-0 mb-3 h-100">
+              <div class="card-header h3 fw-bold text-center">Email</div>
+              <div class="card-body text-dark text-center mt-1">
+                <i
+                  class="bi bi-envelope-fill text-white bg-danger rounded-pill p-3"
+                ></i>
+                <p class="card-text fw-bold m-3">Send us email</p>
+                <p class="card-text text-muted">We'd love to hear from you!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card border-primary rounded-0 mb-3 h-100">
+              <div class="card-header h3 fw-bold text-center">Phone</div>
+              <div class="card-body text-dark text-center mt-1">
+                <i
+                  class="bi bi-telephone-fill text-white bg-primary rounded-pill p-3"
+                ></i>
+                <p class="card-text fw-bold m-3">0999-9999-999</p>
+                <p class="card-text text-muted">
+                  Monday - Sunday <br />9am - 5pm
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card border-primary rounded-0 mb-3 h-100">
+              <div class="card-header h3 fw-bold text-center">Chat</div>
+              <div class="card-body text-dark text-center mt-1">
+                <i
+                  class="bi bi-house-fill text-white bg-success rounded-pill p-3"
+                ></i>
+                <p class="card-text fw-bold m-3">Address</p>
+                <p class="card-text text-muted">San Fernando, Pampanga</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  footer  -->
+    <section class="py-5 bg-dark position-relative text-center">
+      <footer class="container">
+        <p class="text-white lead">
+          Copyright &copy; 2022, Artrisk Apparel Clothing Brand
+        </p>
+      </footer>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- ---- Isotope JS ---- -->
