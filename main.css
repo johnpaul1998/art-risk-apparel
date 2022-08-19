@@ -64,6 +64,14 @@ h2:before, .h2-text:after{
 .newsletter{
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
 }
+/* collection images */
+.collection-image span{
+  top: 20px;
+  right: 20px;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+}
 /* for figure */
 figure.snip0015 {
   color: #fff;
@@ -160,4 +168,27 @@ figure.snip0015:hover figcaption::before {
   opacity: 1;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+}
+/* T-shirt overlay */
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(17, 36, 90, 0.9);
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  opacity: 0;
+}
+.t-shirt-item:hover .overlay{
+  opacity: 1;
+}
+.t-shirt-item:hover img{
+  transform: scale(1.1);
+}
+.t-shirt-item img,
+.t-shirt-item .overlay{
+  transition: all 0.4s ease;
 }
